@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Satellite } from './satellite';
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,7 +14,7 @@ export class AppComponent {
 
   sourceList: Satellite[];
 
-  constructor() {
+  constructor () {
     this.sourceList = [
        new Satellite("SiriusXM", "Communication", "2009-03-21", "LOW", true),
        new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true),
@@ -23,3 +25,4 @@ export class AppComponent {
  }
 
 }
+
